@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Transmissão de dados · Manual e-SUS AB PEC versão 4.0</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="O módulo “Transmissão de Dados” permite fazer o controle de envio dos dados realizados por uma instalação PEC e-SUS AB, bem como controlar o recebimento de dados oriundos de outras aplicações."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Transmissão de dados · Manual e-SUS AB PEC versão 4.0"/><meta property="og:type" content="website"/><meta property="og:url" content="https://thaisalacerda.github.io/"/><meta property="og:description" content="O módulo “Transmissão de Dados” permite fazer o controle de envio dos dados realizados por uma instalação PEC e-SUS AB, bem como controlar o recebimento de dados oriundos de outras aplicações."/><meta property="og:image" content="https://thaisalacerda.github.io/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://thaisalacerda.github.io/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/logoEsus.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://thaisalacerda.github.io/blog/atom.xml" title="Manual e-SUS AB PEC versão 4.0 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://thaisalacerda.github.io/blog/feed.xml" title="Manual e-SUS AB PEC versão 4.0 Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logoEsus.ico" alt="Manual e-SUS AB PEC versão 4.0"/><h2 class="headerTitleWithLogo">Manual e-SUS AB PEC versão 4.0</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a target="_self"></a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/transmissao" target="_self">Manual</a></li><li class=""><a href="/docs/doc4" target="_self">API</a></li><li class=""><a href="/help" target="_self">Help</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Administração</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Instalação</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc1">Boas práticas</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Administração</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/configInstalacao">Configuração de instalação</a></li><li class="navListItem"><a class="navItem" href="/docs/gestaoMunicipal">Gestão municipal</a></li><li class="navListItem"><a class="navItem" href="/docs/perfil">Perfil</a></li><li class="navListItem"><a class="navItem" href="/docs/profissionais">Profissionais</a></li><li class="navListItem"><a class="navItem" href="/docs/importarCidadao">Importar cidadão</a></li><li class="navListItem"><a class="navItem" href="/docs/importarCnes">Importar CNES</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/transmissao">Transmissão de dados</a></li><li class="navListItem"><a class="navItem" href="/docs/ubs">Unidade de saúde</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Atendimento</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc2">Boas práticas</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Agenda</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc3">This is document number 3</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Cidadão</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc6">This is document number 3</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Coleta de dados simplificada - CDS</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc7">This is document number 3</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Relatórios</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc8">This is document number 3</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Transmissão de dados</h1></header><article><div><span><p>O módulo “Transmissão de Dados” permite fazer o controle de envio dos dados realizados por uma instalação PEC e-SUS AB, bem como controlar o recebimento de dados oriundos de outras aplicações.</p>
+<p>Este módulo possui três funcionalidades principais: configurações da transmissão de dados, controle de envio de dados e controle de recebimento de dados.</p>
+<h3><a class="anchor" aria-hidden="true" id="conceitos-relacionados"></a><a href="#conceitos-relacionados" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Conceitos relacionados</h3>
+<ul>
+<li>Registro de Atendimento Simplificado (RAS): É um modelo de documento que possui o conjunto essencial de informações gerado a partir dos eventos de saúde individualizados registrados no CDS e PEC. Documentos RAS são transmitidos para o SISAB e podem ser enviado para outras instalações do PEC e-SUS AB ou sistemas de terceiros.</li>
+<li>Instalação de destino: É o endereço eletrônico de uma aplicação que pode ser cadastrada para receber os dados enviados por uma instalação PEC e-SUS AB.</li>
+<li>Geração de lotes: [colocar descrição...]</li>
+<li>Lotes para envio: [colocar descrição...]</li>
+<li>Fichas inválidas: [colocar descrição...]</li>
+<li>Fichas repetidas: [colocar descrição...]</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="1-configuracões"></a><a href="#1-configuracões" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Configurações</h2>
+<p>Este módulo possui funcionalidades para realizar o cadastro de Instalações de Destino e para configurar o Horário de geração de lotes e processamentos de fichas. Estas funcionalidades podem ser utilizadas apenas pelo Instalador do PEC e-sus AB.</p>
+<p><img src="/docs/assets/Figura1.png" alt="Figura 1 - Tela de Configurações de Transmissão de dados" title="teste"> <strong>Figura 1 - Tela de Configurações de Transmissão de dados</strong></p>
+<h3><a class="anchor" aria-hidden="true" id="11-cadastrar-instalacões-de-destino-para-envio-online"></a><a href="#11-cadastrar-instalacões-de-destino-para-envio-online" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1 Cadastrar Instalações de destino para envio online</h3>
+<p>As instalações de destino são servidores que possuem uma instalação do PEC e-SUS AB que foram cadastradas para receber dados enviados por outra instalação. Elas podem ser, por exemplo, o Centralizador da Secretaria Municipal de Saúde ou da Secretaria Estadual de Saúde. Desse modo, esses órgãos poderão fazer uso dos relatórios disponíveis para realizar a gestão dos serviços públicos de saúde em sua área de atuação. Nestes casos, Estado ou Município irá fornecerá o endereço eletrônico (link) para inclusão da instalação de destino na configuração de envio.
+O Centralizador Nacional do Ministério da Saúde já é previamente cadastrado nas instalações do PEC e-SUS AB, para que o Governo Federal possa fazer a gestão dos serviços públicos de saúde em todo o território nacional.</p>
+<p><strong>Para cadastrar uma Instalação de Destino:</strong></p>
+<ol>
+<li>Acesse a tela “Configurações” no módulo “Transmissão de Dados”;</li>
+<li>Clique na opção “Adicionar instalação”.</li>
+</ol>
+<p><img src="/docs/assets/Figura2.png" alt="Figura 2 - Formulário de cadastro de Instalação de destino" title="teste"> <strong>Figura 2 - Formulário de cadastro de Instalação de destino</strong></p>
+<ol start="3">
+<li>Preencha o campo “Nome da instalação”. O nome da instalação deve se referir ao local para onde os dados serão enviados (ex.: Centralizador municipal);</li>
+<li>Preencha o campo “Endereço do servidor”. O endereço informado deve ser o endereço eletrônico do computador que possui a instalação do PEC e-sus AB que receberá os dados;</li>
+<li>Clique no botão “Adicionar”.</li>
+<li>Para editar as informações de uma Instalação de destino, clique no botão <img src="/docs/assets/pen-outline.png" alt="" title="Editar">;</li>
+<li>Para inativar uma Instalação de destino, clique no botão <img src="/docs/assets/dots.png" alt="" title="Mais opções"> e na opção “Inativar”;</li>
+<li>Para excluir uma Instalação de destino, clique no botão <img src="/docs/assets/dots.png" alt="" title="Mais opções"> e na opção “Excluir”;</li>
+<li>Para testar a conexão com o servidor de uma Instalação de destino, clique no botãoe na opção “Testar conexão” .</li>
+</ol>
+<p>Observações: Por padrão, as Instalações de Destino são adicionadas “Ativas”.</p>
+<p><strong>Impacto em outros módulos:</strong></p>
+<h3><a class="anchor" aria-hidden="true" id="12-configurar-horario-de-geracão-de-lotes-e-processamento-de-fichas"></a><a href="#12-configurar-horario-de-geracão-de-lotes-e-processamento-de-fichas" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2 Configurar Horário de geração de lotes e processamento de fichas</h3>
+<p>Esta funcionalidade permite configurar o horário de início da geração de lotes e do processamento dos dados de saúde registrados no sistema. O horário previamente cadastrado é 00:00 hora. É recomendado iniciar a geração de lotes fora do horário de funcionamento da Unidade de Saúde.</p>
+<p><strong>Para configurar o Horário de geração de lotes e processamento de fichas:</strong></p>
+<ol>
+<li>Acesse a tela Configurações no módulo “Transmissão de Dados”;</li>
+<li>Preencha o campo “Horário”;</li>
+<li>Clique no botão “Salvar”.</li>
+</ol>
+<p><strong>Impacto em outros módulos:</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="2-envio-de-dados"></a><a href="#2-envio-de-dados" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Envio de dados</h2>
+<p>Este módulo permite que o Administrador municipal monitore o envio das informações do PEC e-SUS AB para outras aplicações. É possível acompanhar o envio de dados que foram enviados de forma online ou enviados manualmente por arquivo ZIP.
+O sistema apresenta uma lista de lotes gerados, com data de criação dos lotes, quantidade de fichas e status de envio (Enviado, Não enviado).</p>
+<p><img src="/docs/assets/Figura3.png" alt="Figura 3 - Tela de Envio de dados"> <strong>Figura 3 - Tela de Envio de dados</strong></p>
+<h3><a class="anchor" aria-hidden="true" id="2-1-gerar-lotes-para-envio"></a><a href="#2-1-gerar-lotes-para-envio" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 1 Gerar lotes para envio</h3>
+<p>A geração de lotes para envio pode ser realizada de forma automática ou manual.</p>
+<p><strong>Geração de lotes automática:</strong></p>
+<p>A geração de lotes para envio ocorre no horário configurado no módulo de Configurações da Transmissão de dados. Para que os lotes sejam gerados no horário definido, é necessário que o computador que possui a instalação do PEC e-sus AB esteja ligado, caso contrário os lotes serão gerados no momento em que o servidor for reiniciado.</p>
+<p><strong>Geração de lotes manual:</strong></p>
+<p>[Descrever a geração manual ]</p>
+<p><strong>Impacto em outros módulos:</strong></p>
+<ul>
+<li>Fichas CDS que foram processadas e inseridas em um lote não podem mais ser alteradas ou excluídas do sistema.</li>
+<li>Fichas CDS e atendimentos registrados no PEC que foram processados passam a ser contabilizados nos relatórios.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="22-envio-de-lotes"></a><a href="#22-envio-de-lotes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2 Envio de lotes</h3>
+<p>O envio de lotes pode ser realizado de forma online ou de forma offline.</p>
+<p><strong>Envio Online:</strong></p>
+<p>No envio Online os lotes gerados pelo sistema são enviados automaticamente para todas as Instalações de Destino ativas cadastradas nas Configurações da Transmissão de dados. Tentativas de envio de dados ocorrem a cada 10 minutos, obedecendo a uma regra de agendamento automático do Centralizador Nacional. O agendamento tem o objetivo de distribuir o fluxo e reduzir os acessos aos servidores das instalações de destino. Dessa forma, a transmissão de dados para as instalações de destino serão executadas conforme disponibilidade do servidor destino.</p>
+<p>Está funcionalidade só é oferecida para instalações configuradas para funcionamento Online.</p>
+<p>Observação: É necessário que o município possua ao menos uma instalação on-line para realizar o envio das informações ao Centralizador Nacional.</p>
+<p><strong>Envio Offline:</strong></p>
+<p>Instalações do PEC e-sus AB que não possuam conexão com Internet podem fazer o envio dos dados por meio do salvamento dos Lotes em um arquivo que posteriormente poderá ser importado em outras instalações.</p>
+<p><strong>Para salvar um lote em arquivo:</strong></p>
+<ol>
+<li>Acesse a tela Envio no módulo “Transmissão de Dados”;</li>
+<li>Clique no botão <img src="/docs/assets/dots.png" alt="" title="Mais opções"> e na opção “Salvar em arquivo”, para salvar um lote que já havia sido gerado.</li>
+<li>Para visualizar informações adicionais sobre o lote, clique no botão <img src="/docs/assets/dots.png" alt="" title="Mais opções"> e na opção “Testar conexão” .</li>
+</ol>
+<p><img src="/docs/assets/Figura4.png" alt="Figura 4 - Tela de visualização de lote"> <strong>Figura 4 - Tela de visualização de lote</strong></p>
+<h2><a class="anchor" aria-hidden="true" id="3-recebimento-de-dados"></a><a href="#3-recebimento-de-dados" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Recebimento de dados</h2>
+<p>Este módulo permite que o Administrador municipal monitore o recebimento de informações oriundas de outras aplicações que também utilizam o formato RAS. Estas informações podem ser recebidas de forma online ou offline (através da importação de arquivo ZIP). Os dados recebidos podem ser visualizados agrupados por Lotes ou por CNES de origem (estabelecimento que registrou a informação).</p>
+<h3><a class="anchor" aria-hidden="true" id="31-visualizar-dados-recebidos-agrupados-por-lote"></a><a href="#31-visualizar-dados-recebidos-agrupados-por-lote" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.1 Visualizar dados recebidos agrupados por lote</h3>
+<p>O sistema apresenta uma lista dos lotes recebidos, com nome do profissional responsável pela instalação que realizou o envio, data de recebimento, quantidade de fichas válidas, inválidas e repetidas. O módulo permite imprimir um relatório de inconsistências para lotes recebidos que possuem registros inválidos ou duplicados.</p>
+<p><img src="/docs/assets/Figura5.png" alt="Figura 5 - Tela de Recebimento - Agrupamento por lotes"> <strong>Figura 5 - Tela de Recebimento - Agrupamento por lotes</strong></p>
+<p><strong>Para visualizar os dados de um lote:</strong></p>
+<ol>
+<li>Acesse a tela Recebimento no módulo “Transmissão de Dados”;</li>
+<li>Clique no botão <img src="/docs/assets/dots.png" alt="" title="Mais opções"> e na opção “Visualizar”.</li>
+<li>Para gerar o relatório de inconsistências de um lote:</li>
+<li>Acesse a tela Recebimento no módulo “Transmissão de Dados”;</li>
+<li>Clique no botão <img src="/docs/assets/printer-outline.png" alt="" title="Impressora"> para imprimir o relatório de inconsistências.</li>
+</ol>
+<p><strong>Para gerar o relatório de inconsistências de múltiplos lotes:</strong></p>
+<ol>
+<li>Acesse a tela Recebimento no módulo “Transmissão de Dados”;</li>
+<li>Clique no botão “Gerar relatório de inconsistências”;</li>
+<li>Na modal “Gerar relatório de inconsistências”, informe o período, responsável ou tipo de recebimento para os quais deseja gerar o relatório.</li>
+<li>Clique no botão Gerar.</li>
+</ol>
+<p><img src="/docs/assets/Figura6.png" width="50%"> <strong>Figura 6 - Modal para gerar relatório de inconsistências</strong></p>
+<h3><a class="anchor" aria-hidden="true" id="32-visualizar-dados-recebidos-agrupados-por-cnes"></a><a href="#32-visualizar-dados-recebidos-agrupados-por-cnes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.2 Visualizar dados recebidos agrupados por CNES</h3>
+<p>É apresentada uma lista dos lotes recebidos agrupados por estabelecimento de saúde e mês de envio. Para cada registro da listagem é apresentado o nome do estabelecimento de origem, mês no qual o envio foi realizado e a quantidade de fichas contidas nos lotes que já foram processadas na competência selecionada.</p>
+<p><img src="/docs/assets/Figura7.png" alt="Figura 7 - Visualizar dados recebidos agrupados por CNES" title="teste"> <strong>Figura 7 - Visualizar dados recebidos agrupados por CNES</strong></p>
+<p><strong>Para visualizar os dados enviados por um CNES em uma competência específica:</strong></p>
+<ol>
+<li>Acesse a tela Recebimento no módulo “Transmissão de Dados”;</li>
+<li>Clique no botão do CNES que deseja visualizar os dados recebidos.</li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="33-recebimento-de-dados-de-forma-online"></a><a href="#33-recebimento-de-dados-de-forma-online" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.3 Recebimento de dados de forma online</h3>
+<p>As instalações PEC e-SUS AB podem receber de forma online dados oriundos de diferentes aplicações:</p>
+<ul>
+<li>Para receber dados de outras instalações do PEC e-SUS AB é necessário que elas estejam cadastradas como Instalação de Destino nas instalações de origem.</li>
+<li>Para receber dados de aplicativos mobile como o e-SUS AB Território, e-SUS AB AC e e-SUS Atenção Domiciliar elas devem ser cadastradas como servidor de sincronização.</li>
+</ul>
+<p>As informações recebidas serão processadas no horário configurado nas Configurações de Transmissão de dados.</p>
+<p>Está funcionalidade só pode ser utilizada por instalações configuradas para funcionamento Online.</p>
+<h3><a class="anchor" aria-hidden="true" id="34-recebimento-de-dados-de-forma-offline-via-importacão-de-arquivo"></a><a href="#34-recebimento-de-dados-de-forma-offline-via-importacão-de-arquivo" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.4 Recebimento de dados de forma offline - via importação de arquivo</h3>
+<p>As instalações PEC e-SUS AB podem importar arquivos gerados em outras instalações PEC e-SUS AB ou em sistemas de terceiros que também utilizem o modelo RAS.
+Essa funcionalidade permite receber</p>
+<p><strong>Para importar um arquivo com dados produzidos em outras instalações:</strong></p>
+<p>[Descrição dos passos]</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/importarCnes"><span class="arrow-prev">← </span><span>Importar CNES</span></a><a class="docs-next button" href="/docs/ubs"><span>Unidade de saúde</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#1-configuracões">1. Configurações</a><ul class="toc-headings"><li><a href="#11-cadastrar-instalacões-de-destino-para-envio-online">1.1 Cadastrar Instalações de destino para envio online</a></li><li><a href="#12-configurar-horario-de-geracão-de-lotes-e-processamento-de-fichas">1.2 Configurar Horário de geração de lotes e processamento de fichas</a></li></ul></li><li><a href="#2-envio-de-dados">2. Envio de dados</a><ul class="toc-headings"><li><a href="#2-1-gerar-lotes-para-envio">2. 1 Gerar lotes para envio</a></li><li><a href="#22-envio-de-lotes">2.2 Envio de lotes</a></li></ul></li><li><a href="#3-recebimento-de-dados">3. Recebimento de dados</a><ul class="toc-headings"><li><a href="#31-visualizar-dados-recebidos-agrupados-por-lote">3.1 Visualizar dados recebidos agrupados por lote</a></li><li><a href="#32-visualizar-dados-recebidos-agrupados-por-cnes">3.2 Visualizar dados recebidos agrupados por CNES</a></li><li><a href="#33-recebimento-de-dados-de-forma-online">3.3 Recebimento de dados de forma online</a></li><li><a href="#34-recebimento-de-dados-de-forma-offline-via-importacão-de-arquivo">3.4 Recebimento de dados de forma offline - via importação de arquivo</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/logoEsus.ico" alt="Manual e-SUS AB PEC versão 4.0" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/transmissao.html">Getting Started (or other categories)</a><a href="/docs/en/doc2.html">Guides (or other categories)</a><a href="/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>
