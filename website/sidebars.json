@@ -1,0 +1,25 @@
+{
+  "docs": {
+    "Instalação": ["doc1"],
+    "Administração": [
+      "configInstalacao",
+      "gestaoMunicipal",
+      "perfil",
+      "profissionais",
+      "importarCidadao",
+      "importarCnes",
+      "transmissao",
+      "ubs"
+    ],
+    "Atendimento": ["doc2"],
+    "Agenda": ["doc3"],
+    "Atenção domiciliar": ["doc4"],
+    "Auditoria": ["doc5"],
+    "Cidadão": ["doc6"],
+    "Coleta de dados simplificada - CDS": ["doc7"],
+    "Relatórios": ["doc8"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
