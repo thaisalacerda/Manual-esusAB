@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://thaisalacerda.github.io/Manual-esusAB/blog</id>
-    <title>Manual e-SUS AB PEC versão 4.0 Blog</title>
+    <title>Manual e-SUS AB PEC versão Blog</title>
     <updated>2017-10-24T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://thaisalacerda.github.io/Manual-esusAB/blog"/>
-    <subtitle>The best place to stay up-to-date with the latest Manual e-SUS AB PEC versão 4.0 news and events.</subtitle>
+    <subtitle>The best place to stay up-to-date with the latest Manual e-SUS AB PEC versão news and events.</subtitle>
     <logo>https://thaisalacerda.github.io/Manual-esusAB/img/logoEsus.ico</logo>
     <rights>Copyright © 2019 Your Name or Your Company Name</rights>
     <entry>
