@@ -1,5 +1,5 @@
 ---
-id: version-0,1-configInstalacao
+id: version-1.0.0-configInstalacao
 title: Configuração de instalação
 sidebar_label: Configuração de instalação
 original_id: configInstalacao

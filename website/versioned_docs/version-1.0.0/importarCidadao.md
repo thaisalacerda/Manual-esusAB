@@ -1,5 +1,5 @@
 ---
-id: version-0,1-importarCidadao
+id: version-1.0.0-importarCidadao
 title: Importar cidadão
 sidebar_label: Importar cidadão
 original_id: importarCidadao

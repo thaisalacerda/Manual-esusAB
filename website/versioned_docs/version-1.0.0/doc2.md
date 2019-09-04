@@ -1,7 +1,7 @@
 ---
-id: version-0,1-doc1
+id: version-1.0.0-doc2
 title: Boas práticas
-original_id: doc1
+original_id: doc2
 ---
 
 ## Boas práticas

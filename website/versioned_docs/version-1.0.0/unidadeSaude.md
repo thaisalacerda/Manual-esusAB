@@ -1,5 +1,5 @@
 ---
-id: version-0,1-ubs
+id: version-1.0.0-ubs
 title: Unidade de saúde
 sidebar_label: Unidade de saúde
 original_id: ubs

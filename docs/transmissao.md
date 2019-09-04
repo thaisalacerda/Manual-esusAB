@@ -21,7 +21,7 @@ Este módulo possui três funcionalidades principais: configurações da transmi
 
 Este módulo possui funcionalidades para realizar o cadastro de Instalações de Destino e para configurar o Horário de geração de lotes e processamentos de fichas. Estas funcionalidades podem ser utilizadas apenas pelo Instalador do PEC e-sus AB.
 
-![Figura 1 - Tela de Configurações de Transmissão de dados](/docs/assets/Figura1.png "teste") **Figura 1 - Tela de Configurações de Transmissão de dados**
+![Figura 1 - Tela de Configurações de Transmissão de dados](assets/Figura1.png "teste") **Figura 1 - Tela de Configurações de Transmissão de dados**
 
 ### 1.1 Cadastrar Instalações de destino para envio online
 
@@ -33,14 +33,14 @@ O Centralizador Nacional do Ministério da Saúde já é previamente cadastrado 
 1. Acesse a tela “Configurações” no módulo “Transmissão de Dados”;
 2. Clique na opção “Adicionar instalação”.
 
-![Figura 2 - Formulário de cadastro de Instalação de destino](/docs/assets/Figura2.png "teste") **Figura 2 - Formulário de cadastro de Instalação de destino**
+![Figura 2 - Formulário de cadastro de Instalação de destino](assets/Figura2.png "teste") **Figura 2 - Formulário de cadastro de Instalação de destino**
 
 3. Preencha o campo “Nome da instalação”. O nome da instalação deve se referir ao local para onde os dados serão enviados (ex.: Centralizador municipal);
 4. Preencha o campo “Endereço do servidor”. O endereço informado deve ser o endereço eletrônico do computador que possui a instalação do PEC e-sus AB que receberá os dados;
 5. Clique no botão “Adicionar”.
-6. Para editar as informações de uma Instalação de destino, clique no botão ![](/docs/assets/pen-outline.png "Editar");
-7. Para inativar uma Instalação de destino, clique no botão ![](/docs/assets/dots.png "Mais opções") e na opção “Inativar”;
-8. Para excluir uma Instalação de destino, clique no botão ![](/docs/assets/dots.png "Mais opções") e na opção “Excluir”;
+6. Para editar as informações de uma Instalação de destino, clique no botão ![](assets/pen-outline.png "Editar");
+7. Para inativar uma Instalação de destino, clique no botão ![](assets/dots.png "Mais opções") e na opção “Inativar”;
+8. Para excluir uma Instalação de destino, clique no botão ![](assets/dots.png "Mais opções") e na opção “Excluir”;
 9. Para testar a conexão com o servidor de uma Instalação de destino, clique no botãoe na opção “Testar conexão” .
 
 Observações: Por padrão, as Instalações de Destino são adicionadas “Ativas”.
@@ -64,7 +64,7 @@ Esta funcionalidade permite configurar o horário de início da geração de lot
 Este módulo permite que o Administrador municipal monitore o envio das informações do PEC e-SUS AB para outras aplicações. É possível acompanhar o envio de dados que foram enviados de forma online ou enviados manualmente por arquivo ZIP.
 O sistema apresenta uma lista de lotes gerados, com data de criação dos lotes, quantidade de fichas e status de envio (Enviado, Não enviado).
 
-![Figura 3 - Tela de Envio de dados](/docs/assets/Figura3.png) **Figura 3 - Tela de Envio de dados**
+![Figura 3 - Tela de Envio de dados](assets/Figura3.png) **Figura 3 - Tela de Envio de dados**
 
 ### 2. 1 Gerar lotes para envio
 
@@ -102,10 +102,10 @@ Instalações do PEC e-sus AB que não possuam conexão com Internet podem fazer
 **Para salvar um lote em arquivo:**
 
 1. Acesse a tela Envio no módulo “Transmissão de Dados”;
-2. Clique no botão ![](/docs/assets/dots.png "Mais opções") e na opção “Salvar em arquivo”, para salvar um lote que já havia sido gerado.
-3. Para visualizar informações adicionais sobre o lote, clique no botão ![](/docs/assets/dots.png "Mais opções") e na opção “Testar conexão” .
+2. Clique no botão ![](assets/dots.png "Mais opções") e na opção “Salvar em arquivo”, para salvar um lote que já havia sido gerado.
+3. Para visualizar informações adicionais sobre o lote, clique no botão ![](assets/dots.png "Mais opções") e na opção “Testar conexão” .
 
-![Figura 4 - Tela de visualização de lote](/docs/assets/Figura4.png) **Figura 4 - Tela de visualização de lote**
+![Figura 4 - Tela de visualização de lote](assets/Figura4.png) **Figura 4 - Tela de visualização de lote**
 
 ## 3. Recebimento de dados
 
@@ -115,15 +115,15 @@ Este módulo permite que o Administrador municipal monitore o recebimento de inf
 
 O sistema apresenta uma lista dos lotes recebidos, com nome do profissional responsável pela instalação que realizou o envio, data de recebimento, quantidade de fichas válidas, inválidas e repetidas. O módulo permite imprimir um relatório de inconsistências para lotes recebidos que possuem registros inválidos ou duplicados.
 
-![Figura 5 - Tela de Recebimento - Agrupamento por lotes](/docs/assets/Figura5.png) **Figura 5 - Tela de Recebimento - Agrupamento por lotes**
+![Figura 5 - Tela de Recebimento - Agrupamento por lotes](assets/Figura5.png) **Figura 5 - Tela de Recebimento - Agrupamento por lotes**
 
 **Para visualizar os dados de um lote:**
 
 1. Acesse a tela Recebimento no módulo “Transmissão de Dados”;
-2. Clique no botão ![](/docs/assets/dots.png "Mais opções") e na opção “Visualizar”.
+2. Clique no botão ![](assets/dots.png "Mais opções") e na opção “Visualizar”.
 3. Para gerar o relatório de inconsistências de um lote:
 4. Acesse a tela Recebimento no módulo “Transmissão de Dados”;
-5. Clique no botão ![](/docs/assets/printer-outline.png "Impressora") para imprimir o relatório de inconsistências.
+5. Clique no botão ![](assets/printer-outline.png "Impressora") para imprimir o relatório de inconsistências.
 
 **Para gerar o relatório de inconsistências de múltiplos lotes:**
 
@@ -132,13 +132,13 @@ O sistema apresenta uma lista dos lotes recebidos, com nome do profissional resp
 3. Na modal “Gerar relatório de inconsistências”, informe o período, responsável ou tipo de recebimento para os quais deseja gerar o relatório.
 4. Clique no botão Gerar.
 
-<img src="/docs/assets/Figura6.png" width="50%"> **Figura 6 - Modal para gerar relatório de inconsistências**
+<img src="assets/Figura6.png" width="50%"> **Figura 6 - Modal para gerar relatório de inconsistências**
 
 ### 3.2 Visualizar dados recebidos agrupados por CNES
 
 É apresentada uma lista dos lotes recebidos agrupados por estabelecimento de saúde e mês de envio. Para cada registro da listagem é apresentado o nome do estabelecimento de origem, mês no qual o envio foi realizado e a quantidade de fichas contidas nos lotes que já foram processadas na competência selecionada.
 
-![Figura 7 - Visualizar dados recebidos agrupados por CNES](/docs/assets/Figura7.png "teste") **Figura 7 - Visualizar dados recebidos agrupados por CNES**
+![Figura 7 - Visualizar dados recebidos agrupados por CNES](assets/Figura7.png "teste") **Figura 7 - Visualizar dados recebidos agrupados por CNES**
 
 **Para visualizar os dados enviados por um CNES em uma competência específica:**
 

@@ -1,0 +1,44 @@
+{
+  "version-1.0.0-docs": {
+    "Instalação": [
+      "version-1.0.0-doc1"
+    ],
+    "Administração": [
+      "version-1.0.0-configInstalacao",
+      "version-1.0.0-gestaoMunicipal",
+      "version-1.0.0-perfil",
+      "version-1.0.0-profissionais",
+      "version-1.0.0-importarCidadao",
+      "version-1.0.0-importarCnes",
+      "version-1.0.0-transmissao",
+      "version-1.0.0-ubs"
+    ],
+    "Atendimento": [
+      "version-1.0.0-doc2"
+    ],
+    "Agenda": [
+      "version-1.0.0-doc3"
+    ],
+    "Atenção domiciliar": [
+      "version-1.0.0-doc4"
+    ],
+    "Auditoria": [
+      "version-1.0.0-doc5"
+    ],
+    "Cidadão": [
+      "version-1.0.0-doc6"
+    ],
+    "Coleta de dados simplificada - CDS": [
+      "version-1.0.0-doc7"
+    ],
+    "Relatórios": [
+      "version-1.0.0-doc8"
+    ]
+  },
+  "version-1.0.0-docs-other": {
+    "First Category": [
+      "version-1.0.0-doc4",
+      "version-1.0.0-doc5"
+    ]
+  }
+}

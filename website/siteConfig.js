@@ -21,12 +21,12 @@ const users = [
 ];
 
 const siteConfig = {
-  title: "Manual e-SUS AB PEC versão 4.0", // Title for your website.
+  title: "Manual e-SUS AB PEC versão", // Title for your website.
   tagline: "A website for testing",
   projectName: "Manual-esusAB",
   organizationName: "thaisalacerda",
   url: "https://thaisalacerda.github.io", // Your website URL
-  baseUrl: "/", // Base URL for your project */
+  baseUrl: "/Manual-esusAB/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',

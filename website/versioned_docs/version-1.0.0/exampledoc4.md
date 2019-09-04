@@ -1,5 +1,5 @@
 ---
-id: version-0,1-doc4
+id: version-1.0.0-doc4
 title: Other Document
 original_id: doc4
 ---
