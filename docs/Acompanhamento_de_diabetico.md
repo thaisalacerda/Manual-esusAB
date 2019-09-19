@@ -8,4 +8,4 @@ title: Acompanhamento de diabético
 texto ......
 
 
-![Figura 1 - protótipo](assets/Bridgepng "teste") **protótipo**
+![Figura 1 - protótipo](assets/Bridge.png "protótipo") **protótipo**
